@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE.CSS">
+    <title>Home | T_Emblemy Books</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; font-family: 'Times New Roman'; display: flex; align-items: center; justify-content: center; gap: 10px; margin: 0;">
+            <img src="logo.jpg" alt="Library Logo" style="height: 120px; width: auto;">
+            T_Collectible Books
+        </h1>
+        <nav>
+            <a href="library.html">Home </a>
+            <a href="books.html">Books</a>
+            <a href="century19.html">19th Century Books</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="delivery.html">Delivery</a>
+
+            <form action="/search" method="get" style="display: inline-block; margin-left: 10px;">
+                <input type="text" name="query" placeholder="Search..." style="padding: 5px;">
+                <button type="submit" style="padding: 5px;">Search</button>
+            </form>
+            
+        </nav>
+        
+    </header> 
+     <body class = "delivery-page">
+        <main style="padding: 20px; color: white; font-weight: bold; text-shadow: 1px 1px 2px black;">
+            <h2 style="font-size: 24px;">Delivery Charges</h2>
+            <p>We deliver worldwide! Below are our delivery charges based on the destination:</p>
+            
+            <!-- Delivery Charges Table -->
+            <table style="width: 100%; border-collapse: collapse; color: white; background-color: rgba(0, 0, 0, 0.6);">
+                <thead>
+                    <tr style="background-color: rgba(255, 255, 255, 0.2);">
+                        <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Region</th>
+                        <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Delivery Charge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 10px;">United Kingdom</td>
+                        <td style="border: 1px solid #ddd; padding: 10px;">$5.00</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 10px;">Europe</td>
+                        <td style="border: 1px solid #ddd; padding: 10px;">$10.00</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 10px;">United States/Canada</td>
+                        <td style="border: 1px solid #ddd; padding: 10px;">$15.00</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 10px;">Rest of the World</td>
+                        <td style="border: 1px solid #ddd; padding: 10px;">$20.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <h3 style="font-size: 20px; margin-top: 20px;">Delivery Time</h3>
+            <p>Delivery times may vary depending on your location:</p>
+            <ul>
+                <li>UK: 3-5 business days</li>
+                <li>Europe: 5-10 business days</li>
+                <li>US/Canada: 7-14 business days</li>
+                <li>Rest of the World: 10-20 business days</li>
+            </ul>
+        </main>
+        

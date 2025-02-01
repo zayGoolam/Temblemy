@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE.CSS">
+    <title>Contact Us | T_Collectible Books</title>
+</head>
+<body class="contact-page">
+    <header>
+        <h1 style="text-align: center; font-family: 'Times New Roman'; display: flex; align-items: center; justify-content: center; gap: 10px; margin: 0;">
+            <img src="logo.jpg" alt="Library Logo" style="height: 120px; width: auto;">
+            T_Collectible Books
+        </h1>
+        <nav>
+            <a href="library.html">Home </a>
+            <a href="books.html">Books</a>
+            <a href="century19.html">19th Century Books</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="delivery.html">Delivery</a>
+
+            <form action="/search" method="get" style="display: inline-block; margin-left: 10px;">
+                <input type="text" name="query" placeholder="Search..." style="padding: 5px;">
+                <button type="submit" style="padding: 5px;">Search</button>
+            </form>
+        </nav>
+    </header>
+        </nav>
+    </header>
+    
+    <main style="padding: 20px; color: white; font-weight: bold; text-shadow: 1px 1px 2px black;">
+        <!-- Contact Info -->
+        <div style="text-align: center; margin-bottom: 30px;">
+            <p style="font-size: 18px; font-weight: bold;color: white; margin: 0;">Email: <a href="mailto:info@tcollectiblebooks.com">info@tcollectiblebooks.com</a></p>
+            <p style="font-size: 18px; font-weight: bold;color: white; margin: 0;">Phone: +1 234-567-8900</p>
+        </div>
+
+        <form action="/submit-query" method="post" class="contact-form">
+            <!-- Title -->
+            <label for="title">Title:</label>
+            <select name="title" id="title">
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+                <option value="Ms">Ms</option>
+                <option value="Dr">Dr</option>
+                <option value="Prof">Prof</option>
+            </select>
+            
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            
+            <!-- Nature of Query -->
+            <label for="query-type">Nature of Query:</label>
+            <select name="query-type" id="query-type">
+                <option value="buy-books">Buy books</option>
+                <option value="sell-books">Sell books</option>
+                <option value="return-book">Return a book</option>
+                <option value="delivery">Delivery</option>
+                <option value="complaint">Complaint</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <!-- Message -->
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Write your message here..." rows="5" required></textarea>
+            
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
+
+
+                
